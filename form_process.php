@@ -158,6 +158,7 @@ function email_form_submission($form) {
 function get_email_headers($to_email, $form_email) {
 	$headers = 'From: ' . $to_email . PHP_EOL;
 	$headers .= 'Reply-To: ' . $form_email . PHP_EOL;
+	$headers .= 'MIME-Version: 1.0' . PHP_EOL;
 	$headers .= 'X-Mailer: Adobe Muse CC 2017.0.4.363 with PHP' . PHP_EOL;
 	$headers .= 'Content-type: text/html; charset=utf-8' . PHP_EOL;
 	
